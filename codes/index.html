@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var i=0;// Start point
+var images=[];
+var time =3000;
+// Image List
+images[0]='bg.jpg';
+images[1]='bgg.jpg';
+images[2]='le.jpg';
+images[3]='z.PNG';
+// Change Image
+function changeImg(){
+  document.slide.src=images[i];
+  if(i<images.length-1){
+    i++;
+  }else{
+    i=0;
+ }
+  setTimeout("changeImg()",time);
+}
+
+window.onload = changeImg;
+    </script>
+</head>
+<body>
+    <div class="banner">
+      
+        <div class="navbar">
+            <img src="peaceLogo.png" alt="img" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Envi</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>  
+
+        <div class="content">
+            <h1>DESiGN your FOod</h1>
+            
+            <p><br><br> Eat all you want. <br> Good Food GOOD MOOD</p>
+                    <br> <br>
+                
+            <button type="button"> <span></span> Join us</button>
+            <button type="button"> <span></span> Subscribe</button>
+        </div>
+
+       
+    </div>
+
+    <div class="second">
+        <h1>About</h1> 
+        <p> <h2>hotel Description</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, hic enim quo eos tempora soluta nam earum nostrum ipsa. Iure officiis voluptas nihil quia vel, ea numquam tempora similique consequatur!
+        </p>
+        <img class="pic" name="slide" width="50" height="50">
+    </div>
+    
+    <div class="three">
+        <h1> Services</h1>
+    </div>
+
+    <div class="four">
+        <h1> Contact </h1>
+    </div>
+</body>
+</html>
